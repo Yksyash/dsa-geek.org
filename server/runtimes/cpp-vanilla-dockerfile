@@ -1,0 +1,7 @@
+FROM gcc:10
+
+WORKDIR /usr/src/app
+
+COPY . .
+
+CMD ["sh", "-c", "g++ -o my-app my-app.cpp && ./my-app"]

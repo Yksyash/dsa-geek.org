@@ -1,0 +1,416 @@
+
+#root {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+
+/* Signup-Page */
+.signupPageMain {
+  position: absolute;
+  left: 25em;
+  top: 4em;
+  width: 30%;
+  height: 85%;
+  background-image: linear-gradient(#1e1e1e, #3c3c3c);
+  border: 1px solid grey;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-y: auto;
+}
+
+.signup-container {
+  margin-top: 8em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.logo-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  overflow: hidden;
+}
+
+#leetcode-logo {
+  height: 100%;
+  width: 100%;
+  display: block;
+  margin: auto;
+  object-fit: fill;
+}
+
+.inputField {
+  margin-top: 1em;
+  height: 3em;
+  width: 50%;
+  border-radius: 1em;
+  background-color: #1e1e1e;
+  border: 1px solid grey;
+}
+
+.signupButton,
+.button {
+  margin-top: 1em;
+  font-size: small;
+  cursor: pointer;
+}
+
+/* Add additional styles as needed */
+
+
+.home {
+  position: absolute;
+  max-width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 5em 2em 2em;
+  margin-bottom: 2em;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-image: linear-gradient(#1e1e1e, #3c3c3c);
+
+}
+
+tr:nth-child(odd) {
+  background-color: #3d3d3d;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right:0;
+  height:11%;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.navbar_buttons {
+  width:30%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.ProblemStatement {
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4em;
+  width: 85%;
+  height: 10%;
+  font-weight: 400;
+  font-size: large;
+  margin-top: 1em;
+  align-items: center;
+}
+
+.pagination-bar {
+  position: absolute;
+  margin: 3em 2em 2em;
+  right: 2em;
+  display: flex;
+  gap: 1em;
+}
+
+.titleLink {
+  color: white;
+  font-weight: normal;
+}
+
+
+.adminDashBoardMain{
+  position: absolute;
+  max-width: 100%;
+  top: 0;
+  left: 0;
+  right:0;
+  bottom: 0;
+  max-height: 100%;
+  padding-left: 2em;
+  padding-top: 5em;
+  padding-right: 2em;
+  padding-bottom: 2em;
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2em;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.inputContainer{
+  position: absolute;
+  top: 5em;
+  left: 12em;
+  bottom:2em;
+  width:60%;
+  max-height:70%;
+  padding-bottom: 2em;
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+  gap: 1em;
+  overflow: auto;
+}
+
+#AddQuestionButton{
+  position: absolute;
+  bottom: 0;
+}
+.addQuestion{
+  margin-top: 2em;
+  border-radius: 1em;
+  background-color: #1e1e1e;
+  border:1px solid grey;
+
+}
+
+#AddQuestionText{
+  position: fixed;
+  top: 1.5em;
+}
+.submitSolutionMain{
+  position: absolute;
+  max-width: 100%;
+  top: 0;
+  left: 0;
+  right:0;
+  bottom: 0;
+  /* margin-top: 5em; */
+  height: 80%;
+  /* margin-left: 2em; */
+  padding-left: 2em;
+  padding-top: 5em;
+  padding-right: 2em;
+  padding-bottom: 2em;
+  /* background-color: red; */
+  margin-bottom: 2em;
+  overflow: hidden;
+}
+
+.description{
+position: absolute;
+left: 1em;
+width: 48%;
+height: 85%;
+overflow-x: hidden;
+overflow-y: scroll;
+border: 1px solid grey;
+border-radius: 6px;
+white-space: pre-line;
+}
+
+.solution{
+  position: absolute;
+  top: 8em;
+  right: 1em;
+  width: 48%;
+  border: 1px solid grey;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+}
+
+.language-dropdown{
+position: absolute;
+top: 4.5em;
+right: 1em;
+width:45%;
+height: 6%;
+border: 1px solid grey;
+max-height: 15%;
+display: flex;
+align-content: left;
+padding-bottom: 0.5em;
+padding-top: 0.5em;
+padding-left: 1em;
+padding-right: 1em;
+border-radius: 6px;
+display: flex;
+justify-content:space-between;
+align-items: center;
+
+
+}
+
+.dropdown{
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: cornflowerblue;
+  
+}
+
+#MySubmissions{
+  background-color: orangered;
+  border-radius: 10px;
+}
+
+.submit-bar{
+position: absolute;
+display: flex;
+align-items: center;
+justify-content: flex-end;
+right: 1em;
+bottom:0;
+margin-bottom: 0.5em;
+height: 2.5em;
+width: 95%;
+gap: 1em;
+background-color: grey;
+padding-right: 0.5em;
+border-radius: 6px;
+
+}
+
+#run-button{
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3c3c3c;
+  
+
+}
+
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #3498db; 
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+#submit-button{
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #009900;
+}
+
+
+
+.Collapsible{
+  position:absolute;
+  bottom:0.5em;
+  right:1em;
+  border:1px solid grey;
+  border-radius: 6px;
+  width:48%;
+  max-height: 47%;
+  overflow-y: scroll;
+}
+
+.Collapsible__contentOuter{
+  /* position: absolute;
+  top: 0; */
+  max-height:100%;
+  margin-bottom: 0.5em;
+  /* overflow-y: scroll; */
+ }
+
+.Collapsible__contentInner{
+   max-height:100%;
+    /* overflow-y: scroll; */
+}
+
+.Collapsible__trigger{
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: slategray;
+  margin-bottom: 0.5em;
+}
+
+.testResults_inner{
+  background-color: #0d0d0d;
+  min-width:20%;
+  border-radius: 10px ;
+  border: 1px solid grey;
+  height: 2.5em;
+  text-align: justify;
+  display: flex;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  justify-content: flex-start;
+  align-items: center;
+  
+  
+}
+
+.viewSubmissions {
+  position: absolute;
+  top: 4em;
+  left: 0;
+  border-radius: 6px;
+  width: 100%;
+  height: 80%;
+  overflow-y: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.viewSubmissions h2 {
+  position: sticky;
+  top: 0;
+  background-color: slateblue;
+  margin-bottom: 1em;
+  width: 100%;
+  text-align: center;
+}
+
+.Submissions {
+  /* border: 1px solid grey; */
+  border-radius: 6px;
+  margin-bottom: 1em;
+  padding: 1em;
+  text-align: center;
+  width:60%;
+  text-align: left;
+  white-space: pre-line;
+}
+
+.Submissions h3 {
+  margin: 0;
+}
+
+.Submissions h3:last-child {
+  color: green;
+}
+
