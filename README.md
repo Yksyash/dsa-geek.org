@@ -1,4 +1,4 @@
-# leetcode_clone
+# dsa-geek.org
 
 This platform provides users with a comprehensive environment for practicing coding problems and improving their programming skills.
 
