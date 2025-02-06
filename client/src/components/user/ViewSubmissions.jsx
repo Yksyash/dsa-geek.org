@@ -1,7 +1,7 @@
 import { useEffect,useState } from "react";
 import { useParams } from "react-router-dom";
 
-import LogoutBar from './LogoutBar';
+import Navbar from './Navbar';
 
 function ViewSubmissions(){
   
@@ -32,7 +32,7 @@ function ViewSubmissions(){
   
   return (
        <>
-        <LogoutBar></LogoutBar>
+        <Navbar></Navbar>
         <div className='viewSubmissions'>
           <h2 style={{position:'sticky',top:0,backgroundColor:'slateblue'}}>Your Recent Submissions</h2>
            {submissions.map((sub,index)=><div className='Submissions'><h3>Submission {index+1}:</h3><br/><h3 style={{color:'green'}}>{sub.code}</h3></div>)}

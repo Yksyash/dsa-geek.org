@@ -9,6 +9,7 @@ import AdminDashboard from './components/admin/AdminDashboard';
 import AdminLoginPage from './components/admin/AdminLoginPage';
 import SubmitSolution from './components/user/SubmitSolution';
 import ViewSubmissions from './components/user/ViewSubmissions';
+import Header from './components/user/Head'
 
 const isLoggedIn = () => {
   const token = localStorage.getItem('token');

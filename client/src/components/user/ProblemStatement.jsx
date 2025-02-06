@@ -8,15 +8,15 @@ function ProblemStatement(props) {
     const titleForUrl= truncatedTitle.replace(/ /g,'-'); 
 
     return (
-            
-            <tr className='ProblemStatement'>
-              <td  width={300} align='left' >
+           
+            <tr class='tw-flex tw-justify-evenly tw-gap-4 tw-mt-1 tw-text-sm tw-p-2'>
+              <td class='tw-truncate tw-basis-1/4'>
                 <Link className='titleLink' to={`/user/submitSolution/${titleForUrl}`}>{truncatedTitle}</Link>
               </td>
-              <td width={50}>
+              <td class='tw-basis-1/4'>
                 {acceptance}
               </td>
-              <td width={100} style={{color:difficulty==='easy'?'green':difficulty=='medium'?'#ff9a00':'#a70000'}}>
+              <td class='tw-basis-1/4' style={{color:difficulty==='easy'?'#01b282':difficulty=='medium'?'#ffa700':'#ff3232'}}>
                 {difficulty}
              </td>
            </tr>
