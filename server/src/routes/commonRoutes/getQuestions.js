@@ -38,7 +38,7 @@ router.get('/',urlencodedParser, async (req,res) =>{
       }
       const collection = db.collection('questions');
       const questions =await collection.find().project(projection).toArray();
-        return res.status(200).json(questions);
+      return res.status(200).json(questions);
        }catch(e){
          return res.status(400).json({message:e})
        }

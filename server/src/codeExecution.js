@@ -2,7 +2,7 @@ const amqp = require('amqplib');
 const fs = require('fs')
 const{exec}=require('child_process')
 
-const{rabbitmqUrl}= require ('./config');
+const {rabbitmqUrl} = require('./config');
 
 async function addResToQueue(){ 
 

@@ -1,10 +1,13 @@
 const express = require('express')
 const bodyParser = require('body-parser');
-const urlencodedParser =bodyParser.json();
+const jsonParser =bodyParser.json();
 
 const router = express.Router();
 
-router.get('/',urlencodedParser,async (req,res)=>{
+const verifyToken = require('../../middlewares/jwtVerifier')
+
+
+router.get('/',verifyToken('user'), jsonParser, async (req,res)=>{
   
     const title=req.query.title;
     const email=req.decoded.email;
